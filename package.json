@@ -1,0 +1,1 @@
+{ "name": "steady", "version": "2.0.0-beta", "private": true, "description": "Steady: school workload balancer (NJSBA STEAM Tank Challenge)", "scripts": { "test": "node --test tests/engine.test.js" } }

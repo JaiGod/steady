@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Steady: School Workload Balancer</title>
+<meta name="description" content="Plan your work, see pile-ups before they happen, and help your school spread tests fairly. Free, private, works offline.">
+<meta name="theme-color" content="#25342F">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app">
+  <header class="top">
+    <div class="brand"><img src="icons/icon.svg" alt="" width="34" height="34"><div><h1>Steady</h1><p>Balance your workload. Balance your school's.</p></div></div>
+    <div id="levelChip" class="chip" aria-live="polite"></div>
+  </header>
+  <div id="demoBanner" class="banner" hidden></div>
+  <main id="main" tabindex="-1"></main>
+  <nav class="tabs" aria-label="Main">
+    <button data-tab="today" aria-label="Today"><span aria-hidden="true">🏠</span>Today</button>
+    <button data-tab="plan" aria-label="Plan"><span aria-hidden="true">✅</span>Plan</button>
+    <button data-tab="load" aria-label="Workload"><span aria-hidden="true">⚖️</span>Load</button>
+    <button data-tab="focus" aria-label="Focus timer"><span aria-hidden="true">⏱️</span>Focus</button>
+    <button data-tab="school" aria-label="School"><span aria-hidden="true">🏫</span>School</button>
+    <button data-tab="about" aria-label="About and method"><span aria-hidden="true">🔬</span>Method</button>
+  </nav>
+</div>
+<div id="sheetRoot"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>Steady needs JavaScript to run.</noscript>
+<script src="js/engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
